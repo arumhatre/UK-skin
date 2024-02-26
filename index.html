@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <header class="container-fluid position_sticky">
+  <header class="container-fluid position_sticky d-none d-md-block">
     <div class="container">
       <div class="col-12">
         <h2 class="text-white m-0 headerno-cls d-none d-md-block">Call Now on <a href="tel:" class="text-white font-weight-bold"></a></h2></div>
@@ -50,7 +50,7 @@
                 </picture>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-5 col-12 d-block justify-content-lg-start text-center text-md-left align-self-end">
-                <div class="banner-content-cls mt-lg-5 pt-lg-5 pt-md-0 mt-1 pt-1 mb-md-5 mb-0">
+                <div class="banner-content-cls mt-lg-5 pt-lg-5 pt-md-0 mt-1 pt-4 mb-md-5 mb-0">
                   <h2 class="banner_ornge_heding">Meet Skin Doctor</h2>
                   <br>
                   <h2 class="banner_ornge_heding">Online For Free</h2>
@@ -540,7 +540,7 @@
   }), $(".tabb_drawer_heading").click(function() {
     $(".tabb_content").hide();
     var a = $(this).attr("rel");
-    $("#" + a).fadeIn(), $(".tabb_drawer_heading").removeClass("d_active"), $(this).addClass("d_active"), $("ul.nptabbs li").removeClass("active"), $("ul.nptabbs li[rel^='" + d_activeTabb + "']").addClass("active")
+    $("#" + a).fadeIn(), $(".tabb_drawer_heading").removeClass("d_active"), $(this).addClass("d_active"), $("ul.nptabbs li").removeClass("active"), $("ul.nptabbs li[rel^='" + a + "']").addClass("active")
   }), $("ul.nptabbs li").last().addClass("tabb_last");
   </script>
 </body>
